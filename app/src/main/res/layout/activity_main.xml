@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/etiqueta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce Primer valor"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/texto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:inputType="numberDecimal"/>
+
+
+    <TextView
+        android:id="@+id/etiqueta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce segundo valor: "
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/texto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:inputType="numberDecimal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button android:id="@+id/botS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:onClick="oper"
+            android:tag="S"
+            android:text="+"/>
+
+        <Button android:id="@+id/botR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="oper"
+            android:layout_marginHorizontal="3dp"
+            android:tag="R"
+            android:text="-"
+            />
+
+        <Button android:id="@+id/botM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:tag="M"
+            android:onClick="oper"
+            android:text="*"/>
+
+        <Button android:id="@+id/botD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:tag="D"
+            android:onClick="oper"
+            android:text="/"/>
+
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado: "
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>
